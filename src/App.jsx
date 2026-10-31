@@ -38,7 +38,7 @@ export default function App() {
   return (
     <main className="contenedor">
       <header>
-        <p className="etiqueta">FRONTEND II · REACT + API</p>
+        <p className="etiqueta">Desarrollo FRONTEND II · REACT + API</p>
         <h1>Explorador de personajes</h1>
         <p>Buscá personajes de Rick and Morty por su nombre.</p>
       </header>
