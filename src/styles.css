@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f6f4; color: #193b32; }
+.contenedor { width: min(1100px, 92%); margin: 0 auto; padding: 42px 0; }
+.etiqueta { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #37705a; }
+h1 { font-size: clamp(30px, 5vw, 48px); margin: 8px 0; letter-spacing: -1.5px; }
+header > p:last-child { color: #53695e; }
+.filtros { display: grid; grid-template-columns: 1fr; gap: 18px; margin: 30px 0 22px; padding: 22px; background: white; border: 1px solid #d7e2db; border-radius: 16px; }
+label { display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; }
+input, select { width: 100%; min-height: 44px; padding: 10px; font: inherit; color: inherit; background: #fbfdfb; border: 1px solid #a8beb0; border-radius: 7px; }
+input:focus-visible, select:focus-visible { outline: 3px solid #8bc8ac; outline-offset: 2px; }
+.grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 22px; }
+.tarjeta { background: white; border: 1px solid #d7e2db; border-radius: 16px; overflow: hidden; }
+.tarjeta img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.contenido-tarjeta { padding: 18px; }
+h2 { margin: 12px 0 8px; font-size: 21px; }
+.tarjeta p { margin: 8px 0; }
+.estado { display: inline-block; background: #e5efe8; border-radius: 30px; padding: 5px 10px; font-size: 12px; }
+.origen { font-size: 13px; color: #53695e; }
+.mensaje { padding: 22px; background: white; border-radius: 10px; }
+.error { color: #8d2530; background: #fcecef; }
+footer { margin-top: 34px; font-size: 13px; line-height: 1.7; color: #53695e; }
+footer a { display: block; color: #236147; }
+@media (max-width: 650px) { .filtros { grid-template-columns: 1fr; } }
